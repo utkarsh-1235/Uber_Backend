@@ -6,7 +6,7 @@ const userSchema = new Schema({
     fullName: {
     firstName: {
         type: String,
-        required: trusted,
+        required: true,
         minlength: [3, 'first name should be equal to or more than 3 letters']
     },
     lastName: {
@@ -24,7 +24,7 @@ const userSchema = new Schema({
     },
     password: {
         type: String,
-        requiered: true,
+        required: true,
         select: false
     },
     socketId: {
